@@ -1,6 +1,3 @@
-
-
-
 <div class="card mb-4">
     <div class="card-header">
         <button type="button" id="btn-tambah-kategori" class="btn btn-primary"><span class="text"><i class="fas fa-car fa-sm"></i> Tambah Kategori</span></button>

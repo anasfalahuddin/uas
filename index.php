@@ -27,7 +27,7 @@
                 $nama_website = $row['nama_website'];
                 $copy_right = $row['nama_website'];
             ?>
-            <a class="navbar-brand" href="index.php?halaman=home"><h1><?php echo $nama_website;?></h1></br>Jasa Instalasi Jaringan Dan CCTV</a>
+            <a class="navbar-brand" href="index.php?halaman=home"><h2><?php echo $nama_website;?></h2></br>Jasa Instalasi Jaringan Dan CCTV</a>
             </a>
         </nav>
 
@@ -39,7 +39,7 @@
 
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.php?halaman=home">Home</a>
                     </li>
@@ -56,14 +56,14 @@
                     
                     <?php endwhile; ?>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.php?halaman=home">Kontak</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.php?halaman=home">Tentang</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav  ml-auto">
+                <ul class="navbar-nav ml-auto">
                     <?php 
                         session_start();
                         if (isset($_SESSION["id_pengguna"])) {

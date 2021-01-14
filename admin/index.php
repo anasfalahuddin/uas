@@ -16,7 +16,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #2ca4fc;">
     <!-- Brand -->
     <?php
         include '../config/database.php';
@@ -65,6 +65,7 @@ if(isset($_GET['halaman']) &&  isset($_GET['kategori'])){
                 <a href="index.php?halaman=kategori" class="list-group-item list-group-item-action">Produk</a>
                 <a href="index.php?halaman=komentar" class="list-group-item list-group-item-action">Komentar</a>
                 <a href="index.php?halaman=admin" class="list-group-item list-group-item-action">Admin</a>
+                <a href="#" class="list-group-item list-group-item-action">User</a>
                 <a href="index.php?halaman=profil" class="list-group-item list-group-item-action">Profil</a>
                 <a href="logout.php" class="list-group-item list-group-item-action">Logout</a>
             </div>
