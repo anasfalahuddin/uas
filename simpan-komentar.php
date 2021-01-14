@@ -10,7 +10,7 @@
             $data = htmlspecialchars($data);
             return $data;
         }
-        $id_artikel=input($_POST["id_artikel"]);
+        $id_produk=input($_POST["id_produk"]);
         $nama=input($_POST["nama"]);
         $email=input($_POST["email"]);
         $komentar=input($_POST["komentar"]);
@@ -18,18 +18,18 @@
 
 
         //Query input menginput data kedalam tabel 
-        $sql="insert into komentar (id_artikel,nama,email,isi_komentar,status_komentar) values
-        ('$id_artikel','$nama','$email','$komentar','$status')";
+        $sql="insert into komentar (id_produk,nama,email,isi_komentar,status_komentar) values
+        ('$id_produk','$nama','$email','$komentar','$status')";
         //Mengeksekusi/menjalankan query 
         $hasil=mysqli_query($kon,$sql);
      
 
         //Kondisi apakah berhasil atau tidak dalam mengeksekusi query diatas
         if ($hasil) {
-            header("Location:index.php?halaman=artikel&id=$id_artikel&komentar=berhasil");
+            header("Location:index.php?halaman=produk&id=$id_produk&komentar=berhasil");
         }
         else {
-            header("Location:index.php?halaman=artikel&id=$id_artikel&komentar=gagal");
+            header("Location:index.php?halaman=produk&id=$id_produk&komentar=gagal");
 
         }
         
